@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل طلب دورة البرمجة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تسجيل طلب لدورة البرمجة</h1>
+        <form action="/submit-form" method="post">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">اختر الدورة:</label>
+            <select id="course" name="course" required>
+                <option value="basic">دورة أساسيات البرمجة</option>
+                <option value="intermediate">دورة برمجة متقدمة</option>
+                <option value="advanced">دورة برمجة احترافية</option>
+            </select>
+
+            <label for="message">ملاحظات إضافية:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">تقديم الطلب</button>
+        </form>
+    </div>
+</body>
+</html>
